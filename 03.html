@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>等高布局</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .wrap{
+            width:900px;
+            margin:0 auto;
+            overflow:hidden;
+            border:10px solid blue;
+        }
+        .clear:after{
+            content:"";
+            clear:both;
+            display:block;
+        }
+        .left{
+            float:left;
+            background:red;
+            width:200px;
+          padding-bottom:190px;
+           margin-bottom:-190px;
+            /*margin-bottom:-10000px;*/
+        }
+        .right{
+            float:right;
+            background:green;
+            width:700px;
+            padding-bottom:190px;
+           margin-bottom:-190px;
+            /*margin-bottom:-10000px;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap clear">
+        <div class="left">
+            
+          
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
